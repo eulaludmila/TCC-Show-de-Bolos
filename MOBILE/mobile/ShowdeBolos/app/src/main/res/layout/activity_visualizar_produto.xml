@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VisualizarProdutoActivity"
+    android:background="@color/branco"
+    android:orientation="vertical"
+    android:animateLayoutChanges="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ToolbarTheme">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+            <ImageView
+                android:id="@+id/expandedImage"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="centerCrop"
+
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.7" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ToolbarTheme" >
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/branco"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+            <TextView
+                android:id="@+id/txt_nome_produto_visualizar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bolo de Chocolate"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp" />
+
+            <RatingBar
+                android:id="@+id/rt_visualizar_produto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="?attr/ratingBarStyleSmall"
+                android:stepSize="1"
+                android:numStars="5"
+                android:max="10"
+                android:progressTint="#f4d617"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txt_descricao_produto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="20dp"
+                    android:textSize="18sp"
+                    android:text="Bolo de Chocolate produzido com uma farinha de trigo especial em que não pé utulizado leite.
+
+Importante ressaltar que este bolo possui uma cobertura de chocolate e recheio de leite ninho."/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true">
+
+
+                <TextView
+                    android:id="@+id/txt_preco_produto_visualizar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="R$15,00 cada"
+                    android:textAlignment="center"
+                    android:textColor="@color/preto"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/borda_layout"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="95dp"
+                        app:cardCornerRadius="55dp">
+                        <ImageView
+                            android:id="@+id/img_confeiteiro_visualizar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardBackgroundColor="@android:color/transparent"
+                            app:cardElevation="0dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/bolo" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2.5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/txt_nome_confeiteiro_visualizar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Eula Ludmila"
+                        android:textAlignment="center"
+                        android:textColor="@color/preto"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/endereco_confeiteiro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:text="Jandira - SP"
+                        android:textColor="@color/preto"
+                        android:textSize="20sp" />
+
+
+                    <RatingBar
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:progressBackgroundTint="#FFFFD322"
+                        android:rating="5"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_seta"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/borda_layout"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Categoria"
+                        android:textAlignment="center"
+                        android:textColor="@color/preto"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/txt_nome_categoria"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Doce"
+                        android:textAlignment="center"
+                        android:textColor="@color/preto"
+                        android:textSize="20sp" />
+
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_categoria_visualizar"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/logo"
+                    android:layout_weight="1"
+                    />
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/area_compra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:background="@drawable/borda_layout"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="49dp"
+                android:background="@drawable/borda_radius_lados"
+                android:layout_marginRight="3dp"
+                android:layout_marginLeft="8dp"
+                android:orientation="horizontal"
+                >
+
+                <Spinner
+                    android:id="@+id/spn_quantidade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:spinnerMode="dialog"
+                    >
+                </Spinner>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_add_carrinho"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                style="@style/sacola"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="10dp"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#880e4f</color>
+    <color name="colorPrimaryDark">#880e4f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="escuro">#880e4f</color>
+    <color name="escuro2">#b41167</color>
+    <color name="claro">#e9a1b0</color>
+    <color name="claro2">#d9167d</color>
+    <color name="branco">#fff</color>
+    <color name="preto">#000</color>
+    <color name="cinza">#535353</color>
+    <color name="verde">#008000</color>
+    <color name="cinza_claro">#e6e6e6</color>
+    <color name="amarelo">#f4d617</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#fff</color>
+</resources>
+
