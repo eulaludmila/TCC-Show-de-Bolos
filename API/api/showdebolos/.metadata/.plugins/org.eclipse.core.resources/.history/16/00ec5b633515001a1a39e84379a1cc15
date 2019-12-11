@@ -1,0 +1,35 @@
+package br.senai.sp.api.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table (name="tbl_confeiteiro")
+public class ConfeiteiroCodDTO {
+	
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="cod_confeiteiro")
+	private Long codConfeiteiro;
+
+	public Long getCodConfeiteiro() {
+		return codConfeiteiro;
+	}
+
+	public void setCodConfeiteiro(Long codConfeiteiro) {
+		this.codConfeiteiro = codConfeiteiro;
+	}
+
+	@Override
+	public String toString() {
+		return "ConfeiteiroCodDTO [codConfeiteiro=" + codConfeiteiro + "]";
+	}
+	
+	
+
+}

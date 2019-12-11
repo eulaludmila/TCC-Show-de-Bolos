@@ -1,0 +1,39 @@
+package br.senai.sp.api.model;
+
+import java.util.List;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "tbl_item_pedido")
+public class ItemPedidoDTO {
+
+
+	@JoinColumn(name = "cod_produto")
+	private List<Produto> produto;
+
+
+
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
+
+
+	@Override
+	public String toString() {
+		return "ItemPedidoDTO [produto=" + produto + "]";
+	}
+
+
+
+	
+
+}
