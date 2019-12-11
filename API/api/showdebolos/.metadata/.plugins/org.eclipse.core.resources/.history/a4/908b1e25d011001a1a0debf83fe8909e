@@ -1,0 +1,5 @@
+package br.senai.sp.api.repository;
+
+public interface ItemPedidoDTORespository {
+
+}

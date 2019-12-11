@@ -1,0 +1,178 @@
+package br.senai.sp.api.resource;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.senai.sp.api.model.Celular;
+import br.senai.sp.api.model.Cidade;
+import br.senai.sp.api.model.Cliente;
+import br.senai.sp.api.model.Confeiteiro;
+import br.senai.sp.api.model.Endereco;
+import br.senai.sp.api.model.EnderecoConfeiteiro;
+import br.senai.sp.api.model.Estado;
+import br.senai.sp.api.repository.CelularRepository;
+import br.senai.sp.api.repository.CidadeRepository;
+import br.senai.sp.api.repository.ClienteRepository;
+import br.senai.sp.api.repository.ConfeiteiroRepository;
+import br.senai.sp.api.repository.EnderecoConfeiteiroRepository;
+import br.senai.sp.api.repository.EnderecoRepository;
+import br.senai.sp.api.repository.EstadoRepository;
+import br.senai.sp.api.utils.ConverterData;
+
+@RestController
+@RequestMapping("/enderecoconfeiteiro")
+public class EnderecoConfeiteiroResource {
+
+	@Autowired
+	private EnderecoConfeiteiroRepository enderecoConfeiteiroRepository;
+	
+	@Autowired
+	private ConfeiteiroRepository confeiteiroRepository;
+	
+	@Autowired
+	private EnderecoRepository enderecoRepository;
+	
+	@Autowired
+	private CelularRepository celularRepository;
+	
+	@Autowired
+	private CidadeRepository cidadeRepository;
+	
+	@Autowired
+	private EstadoRepository estadoRepository;
+	
+	@GetMapping
+	@CrossOrigin(origins = "http://localhost3000")
+	public List<EnderecoConfeiteiro> getEnderecoConfeiteiros(){
+		return enderecoConfeiteiroRepository.findAll();
+	}
+	
+	@GetMapping("/{codEnderecoConfeiteiro}")
+	@CrossOrigin(origins = "http://localhost3000")
+	public Optional<EnderecoConfeiteiro> getEnderecoConfeiteiro(@PathVariable Long codEnderecoConfeiteiro){
+		
+		return enderecoConfeiteiroRepository.findById(codEnderecoConfeiteiro);
+	}
+	
+	@PostMapping
+	@CrossOrigin(origins = "http://localhost:3000")
+	public EnderecoConfeiteiro gravarEnderecoConfeiteiro(@Validated @RequestBody EnderecoConfeiteiro enderecoConfeiteiro){
+		
+		/**
+		 * 
+		 * POST PARA CADASTRAR ENDEREÇO, CONFEITEIRO, CELULAR E ENDERECO_CONFEITEIRO EM UMA ÚNICA REQUISIÇÃO
+		 * 
+		 * */
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		// temos acesso ao confeiteiro que está sendo cadastrado
+		// que é salvo em confeiteiro
+		Confeiteiro confeiteiro = enderecoConfeiteiro.getConfeiteiro();
+		
+		// Converte a data inserida pelo usuário no formatao dd/MM/yyyy
+		// para o formato yyyy-MM-dd e salva no confeiteiro que está sendo cadastrado
+		confeiteiro.setDtNasc(ConverterData.dataBanco(confeiteiro.getDtNasc()));
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		//	temos acesso ao endereco que está sendo cadastrado
+		// que é salvo em endereco
+		Endereco endereco = enderecoConfeiteiro.getEndereco();
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		// temos acesso ao endereco, que possui uma cidade
+		// com a cidade que foi cadastrada procuramos no banco um registro que coincide com o que foi digitado
+		// que é salvo em cidade
+		Cidade cidade = cidadeRepository.findByCidade(endereco.getCidade().getCidade());
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		// temos acesso ao endereco, que possui uma cidade e através dela acessamos o estado cadastrado
+		// com o estado que foi cadastrado procuramos no banco um registro que coincide com o que foi digitado
+		// que é salvo em estado
+		Estado estado = estadoRepository.findByUf(endereco.getCidade().getEstado().getUf());
+				
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		//	temos acesso ao confeiteiro, que possui um celular 
+		// que é salvo em celular
+		Celular celular = enderecoConfeiteiro.getConfeiteiro().getCelular();
+		
+		// Atribuindo o estado cadastrado a cidade cadastrada
+		cidade.setEstado(estado);
+		
+		// Atribuindo a cidade cadastrada ao endereco cadastrado
+		endereco.setCidade(cidade);
+		
+		// Salvando o celular no banco
+		celularRepository.save(celular);
+		
+		// Salvando o confeiteiro no banco
+		confeiteiroRepository.save(confeiteiro);
+		
+		// Salvando o endereco no banco
+		enderecoRepository.save(endereco);
+		
+		// Salvando o endereco do confeiteiro no banco
+		EnderecoConfeiteiro enderecoConfeiteiroSalvo = enderecoConfeiteiroRepository.save(enderecoConfeiteiro);
+		
+		// Retornando o endereco do confeiteiro com todas as informações do confeiteiro
+		return enderecoConfeiteiroSalvo;
+	}
+	
+	@PostMapping("/mobile")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public EnderecoConfeiteiro gravarEnderecoConfeiteiroMobile(@Validated @RequestBody EnderecoConfeiteiro enderecoConfeiteiro){
+		
+		/**
+		 * 
+		 * POST PARA CADASTRAR ENDEREÇO, CONFEITEIRO, CELULAR E ENDERECO_CONFEITEIRO EM UMA ÚNICA REQUISIÇÃO
+		 * 
+		 * */
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		// temos acesso ao confeiteiro que está sendo cadastrado
+		// que é salvo em confeiteiro
+		Confeiteiro confeiteiro = confeiteiroRepository.findByCod(enderecoConfeiteiro.getConfeiteiro().getCodConfeiteiro());
+		
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		//	temos acesso ao endereco que está sendo cadastrado
+		// que é salvo em endereco
+		Endereco endereco = enderecoRepository.findByCod(enderecoConfeiteiro.getEndereco().getCodEndereco());
+
+		
+		// Salvando o endereco do confeiteiro no banco
+		EnderecoConfeiteiro enderecoConfeiteiroSalvo = enderecoConfeiteiroRepository.save(enderecoConfeiteiro);
+		
+		enderecoConfeiteiroSalvo.setConfeiteiro(confeiteiro);
+		enderecoConfeiteiroSalvo.setEndereco(endereco);
+		
+		// Retornando o endereco do confeiteiro com todas as informações do confeiteiro
+		return enderecoConfeiteiroSalvo;
+	}
+	
+	@PutMapping("/{codEnderecoConfeiteiro}")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public ResponseEntity<EnderecoConfeiteiro> atualizaConfeiteiro (@PathVariable Long codEnderecoConfeiteiro, @RequestBody EnderecoConfeiteiro enderecoConfeiteiro	){
+		EnderecoConfeiteiro confeiteiroSalvo =enderecoConfeiteiroRepository.findById(codEnderecoConfeiteiro).get();
+		
+		BeanUtils.copyProperties(enderecoConfeiteiro, confeiteiroSalvo,"codEnderecoConfeiteiro");
+		
+		enderecoConfeiteiroRepository.save(enderecoConfeiteiro);
+		
+		return ResponseEntity.ok(confeiteiroSalvo);
+	}
+	
+	
+}

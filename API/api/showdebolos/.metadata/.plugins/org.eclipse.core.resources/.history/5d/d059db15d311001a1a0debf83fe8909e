@@ -1,0 +1,10 @@
+package br.senai.sp.api.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import br.senai.sp.api.model.ClienteDTO;
+import br.senai.sp.api.model.ItemPedidoDTO;
+
+public interface ItemPedidoDTORespository extends JpaRepository<ItemPedidoDTO, Long> {
+
+}

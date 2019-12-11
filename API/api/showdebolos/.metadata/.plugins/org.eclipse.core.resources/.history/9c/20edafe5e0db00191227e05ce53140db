@@ -1,0 +1,114 @@
+package br.senai.sp.api.resource;
+
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.senai.sp.api.model.Celular;
+import br.senai.sp.api.model.Cidade;
+import br.senai.sp.api.model.Confeiteiro;
+import br.senai.sp.api.model.Endereco;
+import br.senai.sp.api.model.EnderecoConfeiteiro;
+import br.senai.sp.api.model.Estado;
+import br.senai.sp.api.repository.CidadeRepository;
+import br.senai.sp.api.repository.EnderecoConfeiteiroRepository;
+import br.senai.sp.api.repository.EnderecoRepository;
+import br.senai.sp.api.repository.EstadoRepository;
+
+@RestController
+@RequestMapping("/endereco")
+public class EnderecoResource {
+	
+	@Autowired
+	private EnderecoRepository enderecoRepository;
+	
+	@Autowired
+	private CidadeRepository cidadeRepository;
+	
+	@Autowired
+	private EstadoRepository estadoRepository;
+	
+	@Autowired
+	private EnderecoConfeiteiroRepository enderecoConfeiteiroRepository;
+	
+	@GetMapping
+	@CrossOrigin(origins = "http://localhost3000")
+	public List<Endereco> getEnderecos(){
+		return enderecoRepository.findAll();
+	}
+	
+	@PostMapping
+	@CrossOrigin(origins = "http://localhost:3000")
+	public Endereco gravarEndereco(@Validated @RequestBody Endereco endereco) {
+		
+		Cidade cidade = cidadeRepository.findByCidade(endereco.getCidade().getCidade());
+		
+		// Por meio do enderecoConfeiteiro que foi passado pelo corpo da requisição
+		// temos acesso ao endereco, que possui uma cidade e através dela acessamos o estado cadastrado
+		// com o estado que foi cadastrado procuramos no banco um registro que coincide com o que foi digitado
+		// que é salvo em estado
+		Estado estado = estadoRepository.findByUf(endereco.getCidade().getEstado().getUf());
+		
+		// Atribuindo o estado cadastrado a cidade cadastrada
+		cidade.setEstado(estado);
+		
+		// Atribuindo a cidade cadastrada ao endereco cadastrado
+		endereco.setCidade(cidade);
+		
+		// Salvando o endereco no banco
+		Endereco enderecoSalvo = enderecoRepository.save(endereco);
+		return enderecoSalvo;
+	}
+	
+	/*@PutMapping("{codEndereco}")
+	public ResponseEntity<Endereco> atualizarEndereco(@PathVariable Long codEndereco, @RequestBody Endereco endereco){
+		
+		Endereco enderecoSalvo = enderecoRepository.findById(codEndereco).get();
+		
+		BeanUtils.copyProperties(endereco, enderecoSalvo, "codEndereco");
+		
+		enderecoRepository.save(endereco);
+		
+		return ResponseEntity.ok(enderecoSalvo);
+	}*/
+	
+	@PutMapping("/{codConfeiteiro}")
+	@CrossOrigin(origins = "http://localhost:3000")
+	public ResponseEntity<Endereco> atualizaEnderecoConfeiteiro (@PathVariable Long codConfeiteiro, @RequestBody Endereco endereco){
+		
+		//Confeiteiro confeiteiroSalvo = confeiteiroRepository.findById(codConfeiteiro).get();
+		
+		EnderecoConfeiteiro enderecoConfeiteiro = enderecoConfeiteiroRepository.findByCodConfeiteiro(codConfeiteiro);
+		
+		Endereco pegaEndereco = enderecoConfeiteiro.getEndereco();
+		
+		//BeanUtils.copyProperties(endereco, pegaEndereco,"codConfeiteiro");
+		
+		enderecoRepository.save(pegaEndereco);
+		
+		//confeiteiroRepository.save(confeiteiro);
+		
+		return ResponseEntity.ok(endereco);
+	}
+
+}
+
+
+
+
+
+
+
+
+

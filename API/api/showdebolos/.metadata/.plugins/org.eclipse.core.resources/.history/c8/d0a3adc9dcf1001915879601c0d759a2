@@ -1,0 +1,13 @@
+spring.jpa.database= MYSQL 
+spring.datasource.url=jdbc:mysql://54.226.226.93:3306/db_show_de_bolos?useSSL=false
+spring.datasource.username=admin
+spring.datasource.password=bcd127
+
+spring.jpa.show-sql=true
+
+disco.caminho.raiz = /var/www/html/fotos
+disco.cliente.diretorio-clientes = clientes
+disco.confeiteiro.diretorio-confeiteiros = confeiteiros
+disco.produto.diretorio-produtos = produtos
+
+spring.jackson.deserialization.fail-on-unknown-properties=true
