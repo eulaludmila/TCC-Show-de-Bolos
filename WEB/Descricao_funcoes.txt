@@ -1,0 +1,12 @@
+1- Cadastro de Cliente
+
+2- Cadastro de Confeiteiros
+
+3- Uso do sessionStorage para o cadastro do profissiona(Confeiteiro)
+
+4- Cadastro da foto, consumindo a API
+
+5- Uso da Modal para cadastro finalizado
+
+6 - Bibliotecas: node-modules, jquery, jquery-mask-plugin, react-router@3.2.4, react-bootstrap, styled-components, axios, jwt-decode, react-star-ratings, cpf,email-validator,react-loading
+

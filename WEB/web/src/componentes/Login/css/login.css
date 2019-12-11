@@ -1,0 +1,121 @@
+html,body{
+    width: 100%;
+    height:100vh;
+}
+
+.area_login{
+    width: 100%;
+    height: 100vh;
+}
+
+/* .container{
+    width: 100%;
+    height: inherit;
+} */
+
+.primeira_linha{
+    height: 100vh;
+    background-color: white;
+}
+
+.login{
+    height: 60%;
+    margin: auto;
+}
+
+.pure-form-stacked{
+    margin-top: -15px;
+}
+
+
+.elementos-form{
+    width: 60%;
+    min-height: 50px;
+    max-height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    color: #000;
+}
+
+.input_text{
+  height: 50px;
+}
+
+legend{
+    font-size: 30px;
+    text-align: center;
+}
+
+.pure-form-message{
+    width: inherit;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-left: 2px;
+
+}
+
+#botao{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+#botao .pure-form-message{
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.voltar{
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url("../../../img/arrow.png");
+    position: absolute;
+}
+
+
+
+@media only screen and (min-width: 992px){
+    .voltar{
+       
+        margin-top: -150px;
+    }
+    
+}
+
+@media only screen and (max-width: 991px){
+    .voltar{
+        
+        margin-top: -100px;
+    }
+}
+
+.voltar:hover{
+    background-size: cover;
+    background-image: url("../../../img/arrow_white.png");
+}
+
+
+.my-btn:hover{
+    color:#fff;
+    background-color:#880E4F;
+    border-color:#880E4F;
+    cursor: pointer;
+}
+
+.img-login{
+    height: inherit;
+    background-image: url("../../../img/baking.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .img-login{
+        display: none;
+    }
+}

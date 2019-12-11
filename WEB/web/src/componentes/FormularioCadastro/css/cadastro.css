@@ -1,0 +1,47 @@
+html,body{
+    width: 100%;
+    min-height:100vh;
+	height:auto;
+}
+
+*{
+	padding:0px;
+	margin:0px;
+}	
+
+legend{
+    text-align: center;
+}
+
+/*.menu{
+	
+	 width: 100%;
+	 height: 100px;
+	 background-color: #880e4f;
+	
+}*/
+
+.cadastro-cliente{
+	min-height: 100vh;
+    height: auto;
+    background-image: url("../../../img/baking2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+	padding-left:.0px!important;
+	padding-right:.0px!important;
+}
+
+
+.container{
+    height: inherit;
+    /*background-color: white;*/
+    /**border-radius: 20px 20px 20px 20px;*/
+	/*background-color: rgba(0,0,0,0.5);*/
+}
+
+
+.btn-outline-entrar:hover{
+    color:#fff;
+    background-color:#880E4F;
+    border-color:#880E4F;
+}

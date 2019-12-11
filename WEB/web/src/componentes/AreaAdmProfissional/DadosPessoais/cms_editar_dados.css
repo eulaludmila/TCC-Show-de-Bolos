@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body,html {
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul {
+	list-style-type: none;
+	height: inherit;
+	/* background-color: #b63b4d; */
+}
+
+a {
+	color: #b63b4d;
+	text-decoration: none;
+}
+
+/* #segura_tudo{
+	width: 15%;
+	height: 100vh;
+	float: left;
+} */
+
+.centralizar{
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.imagem_confeiteiro{
+	width: 150px;
+	height: 150px;
+	border-radius: 100%;
+	background-color: #CCC;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.imagem_confeiteiro img{
+	width: inherit;
+	height: inherit;
+	border-radius: inherit;
+}
+
+/* Header */
+
+header{
+	width: 100%;
+	height: 200px;
+	background-color: #ebebeb;
+	/* border: 2px solid #880E4F; */
+	border-left: none;
+}
+
+#titulo_header{
+	font-size: 50px;
+	text-align: center;
+	padding-top: 70px;
+}
+
+/*CONTEUDO*/
+
+#caixa_segura_input{
+	width: 100%;
+	height: 50vh;
+
+}
+
+#caixa_imagem{
+	width: 500px;
+	height: 200px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.input_imagem{
+	width: inherit;
+	height: 4vh;
+	margin-top: 15px;
+	padding-left: 20px;
+}
+.lbl_sexo{
+	margin-bottom: -10px;
+}
+
+/*botao*/
+.btn_salvar{
+	margin-right: 50px;
+}

@@ -1,0 +1,354 @@
+
+   
+   
+   
+   .espaco_menu{
+    width: 100%;
+    height: 60px;
+    /* background-color: aquamarine */
+  }
+
+/**************MAIOR QUE 1200 (PC)*/
+
+.nav-link{
+  display: inline!important;
+}
+
+/* .show{
+  transition: 2s;
+} */
+
+button:focus{
+  outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+  
+}
+
+
+.menu{
+  height: 60px;
+  background-color: #b41167;
+  position: fixed;
+  padding: 0!important;
+  z-index: 999;
+}
+
+
+
+.navbar{
+  padding: 0px!important;
+   align-items: inherit!important; 
+}
+
+
+/*ITENS DE NAVEGAÇÂO DO MENU */
+.item_menu{
+  height: 100%;
+  width: 100%;
+  float: left;
+  color: #f3f3f3;
+  text-align: center;
+  padding: 15px;
+  /* margin-left: 45px; */
+  font-size: 19px;
+  font-weight: 500;
+  padding-right: 40px;
+}
+
+.item_menu:hover{
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/*SEGUNDA PARTE DO HEADER QUE FICA ALINHADA A DIREITA*/
+
+.container-autenticacao-header{
+  width: 350px;
+  height: 100%; 
+  margin-left: auto;
+  padding-top: 10px;
+  box-sizing: border-box;
+  padding-right: 15px;
+}
+
+.btn_header{
+  height: 40px;
+  margin-left: 10px;
+  float: left;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+
+
+
+.baixar_header{
+  color: #fff;
+  cursor: pointer;
+  background-color: #880e4f;
+}
+
+.baixar_header:hover{
+  color: #fff;
+  cursor: pointer;
+}
+  /* .active{
+  background-color: #880E4F!important;
+} */
+.ativo{
+  background-color: #880e4f!important;
+  color: #ffffff
+  }
+  
+  .nav-link:hover {
+    cursor: pointer
+    }
+    .drop_header{ 
+      background-color: #fff;
+      margin-left: 40px;
+      
+    }
+    
+  
+
+@media only screen and (min-width: 1200px) { 
+
+  /**************** COISAS QUE NÂO EXISTEM NO PC*****************/
+
+  
+  /*LOGO*/
+  .logo_header{
+    height: 180px;
+    width: 180px;
+    background-image: url(../../../img/logo.png);
+    background-size: 180px, 180px;
+    float: left;
+    position: absolute
+  }
+
+  
+
+  .logo_aux{
+    height: 50px;
+    width: 180px;
+    /* background-color: aqua; */
+  }
+  
+  #texto_header{
+    display: none!important;
+  }
+  
+  .menu_mobile{
+    display: none;
+  }
+
+  .login_header{
+    display: none;
+  }
+
+  .entrar_header{ 
+    background-color: #fff;
+    margin-left: 40px;
+    
+  }
+
+  .drop_header{ 
+    background-color: #fff;
+    margin-left: 40px;
+    
+  }
+
+  .cadastro_header{
+    background-color: #880e4f;
+    color: #fff;
+  }
+
+  .menu_pc{
+    width: 1100px;
+  }
+
+  
+} 
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .login_header{
+    display: none;
+  }
+
+  .entrar_header{ 
+    background-color: #fff;
+    margin-left: 40px;
+    
+  }
+
+
+  .cadastro_header{
+    background-color: #880e4f;
+    color: #fff;
+  }
+
+  /*LOGO*/
+  .logo_header,.logo_aux{
+    display: none
+  }
+
+  #texto_header{
+    display: none!important;
+  }
+
+  .menu_pc{
+    width: 900px;
+  }
+
+
+}
+
+
+/***********Menor que 1100 Celular*/
+ @media only screen and (max-width: 991px) {
+  .login_header{
+    height: 30px;
+    /* background-color: #880e4f; */
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  /*LOGO*/
+  .logo_header,.logo_aux{
+    display: none
+  }
+
+  .drop_header{
+    margin-bottom: 2px;
+  }
+
+
+  #texto_header{
+    font-size: 30px;
+    text-align: center;
+    font-family: fonte;
+    color: #fff;
+    /* float: left; */
+    box-sizing: border-box;
+    padding-top: 8px;
+    display: block;
+  }
+
+  .login_linha{
+    border-top: solid 1px #fff;
+  }
+
+  .navbar{
+    background-color: #b41167;
+  }
+
+  .menu_aux{
+    height: 50px;
+    /* background-color: aqua; */
+  }
+  
+  .entrar_header,.cadastro_header{ 
+    display: none;
+  }
+
+  .menu_pc{
+    width: 100%!important;
+  }
+
+  .fechar-menu{
+    background-image: url("../../../img/fechar_menu.jpg");
+  }
+
+  .abrir-menu{
+    background-image: url("../../../img/menu_mobile.jpg");
+  }
+
+  #imagem_menu img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+
+  .aparecer-menu{
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    margin-top: 0px;
+  }
+
+  .sumir-menu{
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    position: fixed;
+    left: 0;
+    margin-top: -100px;
+    z-index: 0;
+  }
+
+  .itens{
+    min-width: 100px;
+    max-width: auto;
+    height: 50px;
+    box-sizing: border-box;
+    padding-top: 8px;
+    
+    
+  }
+
+  .itens p{
+    width: 250px;
+    border-bottom: solid 1px white;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-family: fonte;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-align: center;
+    
+  }
+
+  .setinha p::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .18em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+  }
+
+  .submenu_r{
+    width: 200px;
+    height: 40px;
+    z-index: 8;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: fonte;
+    font-size: 18px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+
+  .itens:hover > .submenu_r{
+    cursor: pointer;
+  }
+
+
+  
+}
+

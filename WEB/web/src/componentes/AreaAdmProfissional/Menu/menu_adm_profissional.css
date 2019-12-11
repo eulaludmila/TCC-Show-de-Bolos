@@ -1,0 +1,288 @@
+.info-principal{
+	width: inherit;
+	min-height: 60px;
+	height: auto;
+}
+.nome_confeiteiro{
+	min-height: 2.8em;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+}
+@media screen and (min-width:1300px){
+	#segura_tudo{
+		width: 15%;
+		height: 100vh;
+		top:0;
+		bottom:0;
+		left: 0;
+		position: fixed;
+		background: #880E4F;
+	}
+	
+	.embaixo{
+		width: 15%;
+		height: 100vh;
+		float: left;
+		top:0;
+		bottom:0;
+		left: 0;
+	}
+	
+	.nome_confeiteiro{
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.2em;
+		border-bottom: solid 1px #fff;
+		padding-top: 0.7em;
+		box-sizing: border-box;
+	}
+	.linha-icone{
+		width: 100%;
+	}
+	
+	.icone{
+		width: 15%;
+		float: left;
+		color: #fff;
+	}
+	
+	.nome-icone{
+		width: 15%;
+		float: left;
+		color: #fff;
+		text-align: center;
+		
+	}
+	
+	.button-icone{
+		padding: 0px! important
+	}
+	
+	.texto-icone{
+		width: 75%;
+		float: left;
+		text-align: justify;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.2em;
+		
+	}
+	
+	.nome-texto-icone{
+		width: 80%;
+		float: left;
+		text-align: justify;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1em;
+	}
+	
+	.info{
+		width: inherit;
+		height: 50px;
+		padding-top: 1em;
+		box-sizing: border-box;
+	}
+	.info-principal{
+		
+		padding-top: 1em;
+		box-sizing: border-box;
+		border-bottom: solid 1px #fff
+	}
+	.itens{
+		background-color: #880E4F;
+		color: #fff;
+		padding-left: 4em;
+		border-bottom: solid 1px #fff
+	}
+	.info-home{
+		width: inherit;
+		height: 60px;
+		padding-top: 0.6em;
+		box-sizing: border-box;
+		border-bottom: solid 1px #fff;
+		margin-top: 7em;
+	}
+	.info-sair{
+		width: inherit;
+		height: 60px;
+		padding-top: 0.6em;
+		box-sizing: border-box;
+	}
+	
+	.itens:hover{
+		background-color: #fff;
+		cursor: pointer;
+		color: #880E4F;
+	}
+	
+	
+	.imagem_confeiteiro{
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.seta-efeito{
+		width: 5%;
+		float: left;
+		text-align: right;
+		color: #fff;
+	}
+	
+	.fechar{
+		transform: rotate(180deg);
+		transition: 0.5s;
+	}
+	.abrir-com-efeito{
+		transform: rotate(0deg);
+		transition: 0.5s;
+	}
+}
+
+
+@media screen and (max-width:1299px){
+	#segura_tudo{
+		width: 25%;
+		height: 100vh;
+		top:0;
+		bottom:0;
+		left: 0;
+		position: fixed;
+		background: #880E4F;
+	}
+	
+	.embaixo{
+		width: 25%;
+		height: 100vh;
+		float: left;
+		top:0;
+		bottom:0;
+		left: 0;
+	}
+	
+	.nome_confeiteiro{
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.2em;
+		border-bottom: solid 1px #fff;
+		padding-top: 0.7em;
+	}
+	.linha-icone{
+		width: 100%;
+	}
+	
+	.icone{
+		width: 15%;
+		float: left;
+		color: #fff;
+	}
+	
+	.nome-icone{
+		width: 15%;
+		float: left;
+		color: #fff;
+		text-align: center;
+		
+	}
+	
+	.button-icone{
+		padding: 0px! important
+	}
+	
+	.texto-icone{
+		width: 75%;
+		float: left;
+		text-align: justify;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1.2em;
+		
+	}
+	
+	.nome-texto-icone{
+		width: 80%;
+		float: left;
+		text-align: justify;
+		color: #fff;
+		font-weight: bold;
+		font-size: 1em;
+	}
+	
+	.info{
+		width: inherit;
+		height: 50px;
+		padding-top: 1em;
+		box-sizing: border-box;
+	}
+	.info-principal{
+		width: inherit;
+		height: 60px;
+		padding-top: 1em;
+		box-sizing: border-box;
+		border-bottom: solid 1px #fff
+	}
+	.itens{
+		background-color: #880E4F;
+		color: #fff;
+		padding-left: 4em;
+		border-bottom: solid 1px #fff
+	}
+	.info-home{
+		width: inherit;
+		height: 60px;
+		padding-top: 0.6em;
+		box-sizing: border-box;
+		border-bottom: solid 1px #fff;
+		margin-top: 7em;
+	}
+	.info-sair{
+		width: inherit;
+		height: 60px;
+		padding-top: 0.6em;
+		box-sizing: border-box;
+	}
+	
+	.itens:hover{
+		background-color: #fff;
+		cursor: pointer;
+		color: #880E4F;
+	}
+	
+	
+	.imagem_confeiteiro{
+		width: 150px;
+		height: 150px;
+		border-radius: 100%;
+		background-color: #fff;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.seta-efeito{
+		width: 5%;
+		float: left;
+		text-align: right;
+		color: #fff;
+	}
+	
+	.fechar{
+		transform: rotate(180deg);
+		transition: 0.5s;
+	}
+	.abrir-com-efeito{
+		transform: rotate(0deg);
+		transition: 0.5s;
+	}
+	
+	
+	
+	 .main{
+		 width: 75%;
+		  
+	 }
+}
