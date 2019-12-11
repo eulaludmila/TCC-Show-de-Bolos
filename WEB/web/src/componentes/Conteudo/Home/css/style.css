@@ -1,0 +1,1719 @@
+/**************MAIOR QUE 1200 (PC)*/
+
+
+.bolo{
+  min-height: 300px;
+  height: auto;
+  overflow: hidden;
+  padding-top: 2em
+}
+
+/* .menu_pc{
+  margin:0px!important;
+  padding:0px!important;
+  
+} */
+.caixa-pesquisa{
+  margin-bottom: 2.5em;
+}
+.registre_seu_produto_img{
+  background-image: url(../img/bolo.jpg);
+  background-size: cover;
+}
+
+
+
+.botao_detalhe:hover{
+  font-size: 30px;
+  background:rgba(136, 14, 79, 0.6);
+}
+@media only screen and (min-width: 1200px) {
+
+  .foto-carrossel{
+    height: 800px;
+  }
+  
+.linha-separa{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.propaganda{
+  height: 400px;
+  margin-top: 80px;
+  background-size: cover;
+  padding: 0!important;
+}
+
+
+.prop{
+  width: 100%;  
+  height: 100%;
+  background:rgba(0, 0, 0, 0.3);
+  padding: 70px;
+  box-sizing: border-box;
+}
+
+
+.baixar_app_img{
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+}
+
+.titulo_propaganda{
+  margin-left: auto!important;
+  margin-right: auto!important;
+  width: 700px;
+  text-align: center;
+  height: inherit;
+  color: #fff;
+}
+
+.titulo_home{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+}
+
+.prod{
+  float: left !important;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  z-index: 5;
+  background-color: aquamarine
+  
+}
+.prod-conf{
+  float: left !important;
+  margin-left: 1.4em;
+  margin-right: 1.4em;
+  z-index: 5;
+  background-color: aquamarine
+  
+}
+
+
+
+.profissionais{
+  background-color: #fff;
+  width: 100%;
+  min-height: 300px;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+
+.faixa_registro_produto{
+  height: 360px;
+  background-image: url(../img/bolo.jpg);
+  background-size: cover;
+  padding: 0!important;
+}
+
+.avaliacao{
+  width: 150px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rodape{
+  padding: 0!important;
+}
+
+#myFooter .logo{
+  text-align: center;
+}
+
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+}
+
+
+@media screen and (min-width: 1101px) and (max-width: 1199px){
+
+  .foto-carrossel{
+    height: 800px;
+  }
+  .linha-separa{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    float: left !important;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    z-index: 5;
+    background-color: aquamarine
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 2.3em;
+    margin-right: 2.3em;
+    z-index: 5;
+    background-color: aquamarine
+    
+  }
+
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .propaganda{
+    height: 400px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+.baixar_app_img{
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+}
+  .prop{
+    width: 100%;  
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .titulo_propaganda{
+    margin-left: auto!important;
+    margin-right: auto!important;
+    width: 700px;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+  }
+
+  .caixa_botao_app{
+    width: 70%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;  
+  }
+  
+  .caixa_botao_app a, button{
+    text-decoration: none;
+  }
+  
+  .caixa_botao_app button{
+      font-size: 30px;
+      border-color: #fff;
+      color: #fff;
+  }
+}
+
+@media only screen and (min-width:992px) and (max-width:1100px){
+  /*CAIXAS DE PRODUTOS*/
+  /*CAIXAS DE PRODUTOS*/
+  .foto-carrossel{
+    height: 500px;
+  }
+  .linha-separa{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .prod{
+    float: left !important;
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 400px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+  /*CAIXAS DE PRODUTOS*/
+  /*CAIXAS DE PRODUTOS*/
+  .foto-carrossel{
+    height: 500px;
+  }
+  .linha-separa{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .prod{
+    float: left !important;
+    margin-left: 3.7em;
+    margin-right: 3.7em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 400px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+}
+
+@media only screen and (min-width:600px) and (max-width:767px){
+  /*CAIXAS DE PRODUTOS*/
+  /*CAIXAS DE PRODUTOS*/
+  .foto-carrossel{
+    height: 500px;
+  }
+  .linha-separa{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+  
+  .prod{
+    float: left !important;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 400px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 100%;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 70px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+}
+
+@media screen and (min-device-width:536px) and (max-device-width:599px){
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.9em;
+    margin-right: 0.9em;
+    z-index: 5;
+    
+  }
+
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 250px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:530px) and (max-device-width:535px){
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    z-index: 5;
+    
+  }
+
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:523px) and (max-device-width:529px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.7em;
+    margin-right: 0.7em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:517px) and (max-device-width:522px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:510px) and (max-device-width:516px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+}
+
+@media screen and (min-device-width:450px) and (max-device-width:509px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 6em;
+    margin-right: 6em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 6em;
+    margin-right: 6em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:400px) and (max-device-width:449px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 4.5em;
+    margin-right: 4.5em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 250px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 250px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 30px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:380px) and  (max-device-width:399px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 4em;
+    margin-right: 4em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 4em;
+    margin-right: 4em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 290px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 290px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size:25px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:360px) and  (max-device-width:379px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 290px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 290px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size:25px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:340px) and  (max-device-width:359px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 3em;
+    margin-right: 3em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 3em;
+    margin-right: 3em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 280px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 280px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 25px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (min-device-width:320px) and  (max-device-width:339px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 300px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 300px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 25px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+@media screen and (max-device-width:319px) {
+ 
+  .foto-carrossel{
+    height: 300px;
+  }
+
+  .linha-separa{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .titulo_home{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+  }
+  /*CAIXAS DE PRODUTOS*/
+  .prod{
+    /* width: 180px!important; */
+    float: left !important;
+    margin-left: 1em;
+    margin-right: 1em;
+    z-index: 5;
+    
+  }
+  .prod-conf{
+    float: left !important;
+    margin-left: 1em;
+    margin-right: 1em;
+    z-index: 5;
+    
+  }
+
+  .propaganda{
+    width: 100%;  
+    height: 350px;
+    margin-top: 80px;
+    background-size: cover;
+    padding: 0!important;
+  }
+  
+  
+  .prop{
+    width: 100%;  
+    height: 350px;
+    background:rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  
+  
+.baixar_app_img{
+  width: 100%; 
+  min-height: 200px;
+  height: auto;
+  background-image: url(../img/app.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+  
+  .titulo_propaganda{
+
+    width: 100%;  
+    margin-left: auto!important;
+    margin-right: auto!important;
+    text-align: center;
+    height: inherit;
+    color: #fff;
+    font-size: 15px;
+  }
+
+  
+.caixa_botao_app{
+  width: 70%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;  
+}
+
+.caixa_botao_app a, button{
+  text-decoration: none;
+}
+
+.caixa_botao_app button{
+    font-size: 20px;
+    border-color: #fff;
+    color: #fff;
+}
+
+.pesquisa{
+  margin-right: auto;
+  margin-left: auto;
+}
+}
+
+
+
+
+
+

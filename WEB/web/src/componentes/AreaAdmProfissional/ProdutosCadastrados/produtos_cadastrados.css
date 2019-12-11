@@ -1,0 +1,24 @@
+.descricao{
+    width: inherit;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.intro{
+    width: 1090px;
+    margin-bottom: 10px;
+}
+
+.btn-cadastrar{
+    background-color: #880e4f;
+    color: white;
+}
+
+.btn-cadastrar:hover{
+    border: solid 1px #880e4f;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+}

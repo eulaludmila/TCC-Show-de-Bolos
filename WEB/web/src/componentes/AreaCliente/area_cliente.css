@@ -1,0 +1,212 @@
+.caixa-area-cliente{
+    width: inherit;
+        min-height: 800px;
+        height: auto;
+        /* background-color: aqua; */
+        padding-top: 150px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+}
+
+
+
+
+.tamanho-editar{
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.titulo-pedido{
+    height: 70px;;
+    /* background-color: aqua */
+}
+
+.btn-pedido{
+
+    background-color: #ffffff;
+    color: #880e4f;
+    border: solid 1px #880e4f;
+    
+}
+
+.tab{
+    
+}
+.show-grid{
+    margin-right: 0px!important;
+}
+
+.pedido_confeiteiro{
+    
+    text-overflow: ellipsis;
+    text-overflow: "...";
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media only screen and (min-width:1200px) {
+    .caixa-perfil{
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        overflow: hidden;
+        /* background-color: blue; */
+        background-color: #ffffff;
+        border: solid 1px #c4c4c4;
+        padding: 15px;
+    }
+
+    .pedido{
+        width: 40%;
+        /* background-color: bisque; */
+        border: solid 1px #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 15px; float: left;
+        margin-left: 35px;
+        margin-right: 35px;
+    
+    }
+    
+    .area-pedidos{
+        min-height: 200px;
+        height: auto;
+        
+    }
+    .btn-pedido{
+margin-left: auto;
+margin-right: auto;
+    }
+}
+
+
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    .caixa-perfil{
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        overflow: hidden;
+        /* background-color: blue; */
+        background-color: #ffffff;
+        border: solid 1px #c4c4c4;
+        padding: 15px;
+    }
+
+    .pedido{
+        width: 49%;
+        /* background-color: bisque; */
+        border: solid 1px #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 15px; float: left;
+        margin-left: 4px;
+        margin-right: 4px;
+    
+    }
+    
+    .area-pedidos{
+        min-height: 200px;
+        height: auto;
+        
+    }
+    .btn-pedido{
+margin-left: auto;
+margin-right: auto;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+    .caixa-perfil{
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        overflow: hidden;
+        /* background-color: blue; */
+        background-color: #ffffff;
+        border: solid 1px #c4c4c4;
+        padding: 15px;
+    }
+
+    .pedido{
+        width: 100%;
+        /* background-color: bisque; */
+        border: solid 1px #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 15px; float: left;
+    
+    }
+    
+    .area-pedidos{
+        min-height: 200px;
+        height: auto;
+        
+    }
+    .btn-pedido{
+margin-left: auto;
+margin-right: auto;
+    }
+}
+
+@media screen and (min-device-width:576px) and (max-device-width:767px){
+    .caixa-perfil{
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        overflow: hidden;
+        /* background-color: blue; */
+        background-color: #ffffff;
+        border: solid 1px #c4c4c4;
+        padding: 15px;
+    }
+
+    .pedido{
+        width: 100%;
+        /* background-color: bisque; */
+        border: solid 1px #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 15px; float: left;
+    
+    }
+    
+    .area-pedidos{
+        min-height: 200px;
+        height: auto;
+        
+    }
+    .btn-pedido{
+margin-left: auto;
+margin-right: auto;
+    }
+}
+
+@media screen and (max-device-width:575px){
+    .caixa-perfil{
+        width: 100%;
+        min-height: 350px;
+        height: auto;
+        overflow: hidden;
+        /* background-color: blue; */
+        background-color: #ffffff;
+        border: solid 1px #c4c4c4;
+        padding: 15px;
+    }
+
+    .pedido{
+        width: 100%;
+        /* background-color: bisque; */
+        border: solid 1px #c4c4c4;
+        border-radius: 2px;
+        margin-bottom: 15px; float: left;
+    
+    }
+    
+    .area-pedidos{
+        min-height: 200px;
+        height: auto;
+        
+    }
+    .btn-pedido{
+margin-left: auto;
+margin-right: auto;
+    }
+}
+

@@ -1,0 +1,122 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+.center{
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*CONTEUDO 100%*/
+.entrar{
+  min-height: 100px;
+  height: auto;
+  background-color: #88034f;
+}
+
+/*CONTEUDO CENTRALIZADO*/
+.area_entrar{
+  min-height: 770px;
+  height: auto;
+/*    background-color: antiquewhite;*/
+}
+
+  
+/*CONTEUDO PARA ENTRAR NA DASHBOARD*/
+.entrar-login{
+  min-height: 250px;
+  height: auto;
+  overflow: hidden;
+  
+
+}
+
+/*AREA CLIENTE*/
+.entrar-cliente{
+  width: 500px;
+  min-height: 200px;
+  height: auto;
+  box-sizing: border-box;
+/*background-color: #000;*/
+}
+
+/*ICONE*/
+.icone_entrar_cliente{
+  height: 75px;
+/*  background-color: aqua;*/
+  background-image: url("../../../../img/cake.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+/*ICONE*/
+.icone_entrar_profissional{
+  height: 75px;
+/*  background-color: aqua;*/
+  background-image: url("../../../../img/baker.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+/*AREA DO TITULO*/
+.titulo_entrar{
+  width: 300px;
+  min-height: 100px;
+  height: auto;
+  flex-wrap: wrap; 
+  text-align: center;
+/*background-color: aquamarine;*/
+    padding-top:25px;
+}
+
+
+
+/*TITULO*/
+h2{
+  width: inherit;
+/*    background-color: beige;*/
+text-align: justify;
+    
+}
+
+/*SETA*/
+.img_entrar{
+  width: 70px;
+/*  background-color: aliceblue;*/
+    box-sizing:border-box;
+    padding-top:30px;
+}
+
+/*INFORMACOES SOBRE A ÁREA*/
+.info_entrar{
+  min-height: 100px;
+  height: auto;
+  width: 280px;
+  word-wrap: break-word;
+  border-top: solid 1px #c4c4c4;
+  font-size: 1.1em;
+  box-sizing: border-box;
+  padding: 10px;
+/*  background-color: beige;*/
+}
+
+.imagem_seta{
+  width:30px; height:30px;
+  background-image: url("../../../../img/arrow-pointing-to-right.png");
+  background-size: contain;
+}
+
+@media only screen and (max-width: 991px){
+  .entrar-prof{
+    display: none;
+  }
+}
+

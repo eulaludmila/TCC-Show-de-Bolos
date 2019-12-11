@@ -1,0 +1,36 @@
+.img-produto{
+    width: 100%;
+    height: 370px;
+}
+
+.img-produto img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #880E4F;
+
+}
+
+.form-produtos{
+    width: 1000px;
+}
+
+.cadastro-produto {
+    border: 1px solid #880E4F;
+}
+
+.centralizar{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nome-produto, #qtde-min, #qtde-max, #preco, #descricao, #categoria, #foto{
+    border: 1px solid #880E4F;
+}
+
+#foto{
+    height: 45px;
+}
+
+#descricao{
+    height: 165px;
+}

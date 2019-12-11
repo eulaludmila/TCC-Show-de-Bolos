@@ -1,0 +1,38 @@
+
+/* Header */
+
+header{
+	width: 100%;
+	height: 200px;
+	background-color: #ebebeb;
+	/* border: 2px solid #880E4F; */
+	border-left: none;
+}
+
+#titulo_header{
+	font-size: 50px;
+	text-align: center;
+	padding-top: 70px;
+}
+
+/* conteudo */
+
+.texto_produto{
+	font-size: 17px;
+}
+
+.caixa{
+	width: 320px;
+}
+
+.link_vermais{
+	color: #880E4F;
+}
+
+.btn_detalhes{
+	margin-right: 5px;
+}
+
+.btn_detalhes_center{
+	margin-left: 95px;
+}
